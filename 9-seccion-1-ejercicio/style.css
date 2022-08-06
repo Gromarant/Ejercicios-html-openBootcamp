@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.father {
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}
+.son {
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+}
+.father:hover .son {
+    animation: traslation 1s;
+}
+@keyframes traslation {
+    0% {
+        background-color: brown;
+    }
+    25% {
+        background-color: rgb(42, 165, 48);
+        transform: translateX(100%) translateY(0%);
+    }
+    50% {
+        background-color: rgb(97, 42, 165);
+        transform: translateX(100%) translatey(100%);
+    }  
+    75% {
+        background-color: rgb(165, 42, 89);
+        transform: translateX(0%) translatey(100%);
+    }      
+
+    100% {
+        background-color: darkgoldenrod;
+        transform: translateX(0%) translatey(0%);
+    }
+}
